@@ -1,0 +1,51 @@
+name: EMBL_training
+channels:
+  - conda-forge
+  - defaults
+  - rapidsai
+dependencies:
+  - python=3.9
+  - ipykernel
+  - matplotlib
+  - numpy
+  - pandas
+  - dask-image
+  - cucim
+  - cudatoolkit=11.7
+  - scikit-image
+  - pip
+  - pip:
+      - microaligner
+      - trackpy
+      - shapely
+      - cellpose
+      - napari
+      - openpyxl
+
+      - setuptools
+      - pdbpp
+      - jupyter
+      - matplotlib
+      - torch
+      - torchvision
+      - pyro-ppl
+      - jupyter_http_over_ws
+      - pandas
+      - scipy
+      - trackpy
+      - tifffile
+      - scikit-image
+      - starfish
+      - imagecodecs
+      - cucim
+      - dask-image
+      - zarr
+      - aicsimageio
+      - fire
+      - ome-zarr
+      - numba
+      - openpyxl
+
+      - opencv-python-headless==4.6.0.66
+      - scanpy
+      - leidenalg
