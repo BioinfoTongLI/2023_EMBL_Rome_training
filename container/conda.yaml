@@ -24,27 +24,18 @@ dependencies:
 
       - setuptools
       - pdbpp
-      - jupyter
-      - matplotlib
       - torch
       - torchvision
       - pyro-ppl
       - jupyter_http_over_ws
-      - pandas
       - scipy
-      - trackpy
       - tifffile
-      - scikit-image
-      - starfish
       - imagecodecs
-      - cucim
-      - dask-image
       - zarr
       - aicsimageio
       - fire
       - ome-zarr
       - numba
-      - openpyxl
 
       - opencv-python-headless==4.6.0.66
       - scanpy
