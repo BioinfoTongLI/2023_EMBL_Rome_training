@@ -29,10 +29,7 @@ def assign(trees, cells, stem="out"):
         current_counts = {}
         for ch in trees:
             potential_inside = trees[ch].query(cell)
-            try:
-                true_in = [sp for sp in potential_inside if cell.is_valid and cell.contains(sp)]
-            except:
-                next
+            true_in = [trees[ch].geometries[i] for i in potential_inside if cell.is_valid and cell.contains(trees[ch].geometries[i])]
             for sp in true_in:
                 ys.append(sp.y)
                 xs.append(sp.x)
@@ -53,6 +50,8 @@ def assign(trees, cells, stem="out"):
 
     centroid_df = pd.DataFrame(cell_centroids).T
     centroid_df.to_csv(f"{stem}_cell_centroids.csv")
+
+    return count_df, centroid_df
 
     # n_total = [trees[i]._n_geoms for i in trees]
     # summary = pd.DataFrame(
