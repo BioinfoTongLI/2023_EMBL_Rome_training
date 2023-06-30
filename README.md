@@ -21,7 +21,3 @@ We select the ones in this repo because they are shown to be at the sweet point 
 3. Cell segmentation with [CellPose 2.0](https://www.cellpose.org/)
 4. Assignment of detected barcodes to segmented cells with [STRtree](https://shapely.readthedocs.io/en/stable/strtree.html)
 5. Data visualization with [Webatlas pipeline](https://developmental.cellatlas.io/webatlas)
-
-In this workshop, we will cover these steps in this order:
-`2 -> 3 -> 4 -> 1 -> 5`
-to facilitate the process
